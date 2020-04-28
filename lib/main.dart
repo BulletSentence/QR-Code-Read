@@ -13,8 +13,19 @@ class HomePage extends StatelessWidget  {
         title: Text("QR Scanner"),
       ),
       body: Center(
-        child: Text("Olá Mundo"),
+        child: Text("Olá Mundo",
+          style: TextStyle(
+            fontSize: 40,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
+      floatingActionButton: FloatingActionButton.extended(
+          icon: Icon(Icons.camera),
+          label: Text("Scan QR"),
+          onPressed: (){},
+          ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
